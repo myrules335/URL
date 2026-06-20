@@ -1,0 +1,1545 @@
+---
+mixed-port: 7890
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  respect-rules: true
+  proxy-server-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  fallback:
+  - 1.1.1.1
+  - 8.8.8.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+    - gfw
+    ipcidr:
+    - 240.0.0.0/4
+    domain:
+    - "+.google.com"
+    - "+.facebook.com"
+    - "+.youtube.com"
+proxies:
+- name: 距离下次重置剩余：16 天
+  type: ss
+  server: aa3.toppp.cc
+  port: 33003
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: aws.amazon.com
+    path: "/"
+- name: S港HK3|2x[节点多测试不准直接使用]
+  type: ss
+  server: aa3.toppp.cc
+  port: 33003
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: aws.amazon.com
+    path: "/"
+- name: S港[S节点不能用的必须换软件]
+  type: ss
+  server: aa12.toppp.cc
+  port: 33003
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: aws.amazon.com
+    path: "/"
+- name: S港HK13|2x[墙升高了优先高倍率]
+  type: ss
+  server: aa13.toppp.cc
+  port: 33003
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: osxapps.itunes.apple.com
+    path: "/"
+- name: S港HK21|2x
+  type: ss
+  server: aa21.toppp.cc
+  port: 33003
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: aws.amazon.com
+    path: "/"
+- name: S港HK22|2x
+  type: ss
+  server: aa22.toppp.cc
+  port: 33003
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: aws.amazon.com
+    path: "/"
+- name: S港HK23|2x
+  type: ss
+  server: aa23.toppp.cc
+  port: 33003
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: aws.amazon.com
+    path: "/"
+- name: S港HK24|2x
+  type: ss
+  server: aa24.toppp.cc
+  port: 33003
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: osxapps.itunes.apple.com
+    path: "/"
+- name: JP2实时更新订阅
+  type: ss
+  server: aa2.toppp.cc
+  port: 33002
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: aws.amazon.com
+    path: "/"
+- name: SG8[20260620]
+  type: ss
+  server: aa8.toppp.cc
+  port: 33008
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: aws.amazon.com
+    path: "/"
+- name: "[0倍率]近期会大更新"
+  type: ss
+  server: aa1.toppp.cc
+  port: 33001
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: aws.amazon.com
+    path: "/"
+- name: S台TW9|2x
+  type: ss
+  server: aa9.toppp.cc
+  port: 33009
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: osxapps.itunes.apple.com
+    path: "/"
+- name: S9HK10|20x[成本巨幅增加]
+  type: ss
+  server: aa10.toppp.cc
+  port: 33010
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: osxapps.itunes.apple.com
+    path: "/"
+- name: S美US11|2x
+  type: ss
+  server: aa11.toppp.cc
+  port: 33011
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: osxapps.itunes.apple.com
+    path: "/"
+- name: S美US15|5x
+  type: ss
+  server: aa15.toppp.cc
+  port: 33015
+  cipher: 2022-blake3-aes-128-gcm
+  password: OWEwZTRmYThhYTM2ZWE4MQ==:MTZhZWI4OTgtNTY5Zi00NQ==
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: osxapps.itunes.apple.com
+    path: "/"
+- name: L2港HK26|2x
+  type: anytls
+  server: a26.toppp.cc
+  port: 42326
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L2美US24|2x
+  type: anytls
+  server: a24.toppp.cc
+  port: 42324
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6美US33|5x
+  type: anytls
+  server: a33.topzz.cc
+  port: 42333
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L2台TW25|2x
+  type: anytls
+  server: a25.toppp.cc
+  port: 42325
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L2台TW31|3x
+  type: anytls
+  server: a31.topzz.cc
+  port: 42331
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L2日JP28|2x
+  type: anytls
+  server: a28.toppp.cc
+  port: 42328
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L4日JP32|5x
+  type: anytls
+  server: a32.topzz.cc
+  port: 42332
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L2新SG27|2x
+  type: anytls
+  server: a27.toppp.cc
+  port: 42327
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L4新SG30|4x
+  type: anytls
+  server: a30.topzz.cc
+  port: 42330
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 0620地址公告fa邮件topman8848@gmail.com
+  type: trojan
+  server: 87.120.204.178
+  port: 42201
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  udp: true
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: A1[0倍率]
+  type: anytls
+  server: 81.31.232.62
+  port: 42301
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: AUS2|0.1x
+  type: anytls
+  server: a2.toppp.cc
+  port: 42302
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: AUS3[建议不要自动选择节点]
+  type: anytls
+  server: a3.toppp.cc
+  port: 42303
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 202600619节点-A1US-
+  type: anytls
+  server: a4.toppp.cc
+  port: 42304
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: A1US5-保持每天更新
+  type: anytls
+  server: 37.114.38.19
+  port: 42305
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 日JP6
+  type: anytls
+  server: a6.toppp.cc
+  port: 42306
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 日JP7
+  type: anytls
+  server: a7.toppp.cc
+  port: 42307
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 日JP8
+  type: anytls
+  server: a8.toppp.cc
+  port: 42308
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 美US21
+  type: anytls
+  server: a21.toppp.cc
+  port: 42321
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 台TW10[gpt]
+  type: anytls
+  server: a10.toppp.cc
+  port: 42310
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 港HK11
+  type: anytls
+  server: a11.toppp.cc
+  port: 42311
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 新SG18
+  type: anytls
+  server: a18.toppp.cc
+  port: 42318
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 德DE15【未标注都是1倍节点】
+  type: anytls
+  server: a15.toppp.cc
+  port: 42315
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 韩KR20
+  type: anytls
+  server: a20.toppp.cc
+  port: 42320
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6美US34|5x
+  type: anytls
+  server: a34.topzz.cc
+  port: 42334
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6美US35|5x
+  type: anytls
+  server: a35.topzz.cc
+  port: 42335
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6美US36|5x
+  type: anytls
+  server: a36.topzz.cc
+  port: 42336
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6韩KR40|5x
+  type: anytls
+  server: a40.topzz.cc
+  port: 42340
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L2港HK41|8x
+  type: anytls
+  server: a41.topzz.cc
+  port: 42341
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6俄RU42|5x
+  type: anytls
+  server: a42.topzz.cc
+  port: 42342
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6印尼ID43|5x
+  type: anytls
+  server: a43.topzz.cc
+  port: 42343
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6泰TH44|5x
+  type: anytls
+  server: a44.topzz.cc
+  port: 42344
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6印IN45|5x
+  type: anytls
+  server: a45.topzz.cc
+  port: 42345
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6澳AU46|5x
+  type: anytls
+  server: a46.topzz.cc
+  port: 42346
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6加CA47|5x
+  type: anytls
+  server: a47.topzz.cc
+  port: 42347
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6英GB48|5x
+  type: anytls
+  server: a48.topzz.cc
+  port: 42348
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6法FR49|5x
+  type: anytls
+  server: a49.topzz.cc
+  port: 42349
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L6德DE50|5x
+  type: anytls
+  server: a50.topzz.cc
+  port: 42350
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: L9港HK51|20x[成本巨幅增加]
+  type: anytls
+  server: c51.topzz.cc
+  port: 42351
+  password: 16aeb898-569f-4558-b42a-ad84626e86f6
+  client-fingerprint: chrome
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
+- name: V小火箭要升级版本
+  type: vmess
+  server: v2.toppp.cc
+  port: 42102
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V最新地址【aa.booc.cc】
+  type: vmess
+  server: v3.toppp.cc
+  port: 42103
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V地址公告fa邮件topman8848@gmail.com
+  type: vmess
+  server: v4.toppp.cc
+  port: 42104
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V【全功能地址a2.doooo.top】
+  type: vmess
+  server: v5.toppp.cc
+  port: 42105
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V韩KR6【新软件有L2节点】
+  type: vmess
+  server: v6.toppp.cc
+  port: 42106
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V港HK7【永久地址topmang.com-需要代理】
+  type: vmess
+  server: v7.toppp.cc
+  port: 42107
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V新SG9【地址toopman.com】
+  type: vmess
+  server: v9.toppp.cc
+  port: 42109
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V台TW10【订阅地址也会变】
+  type: vmess
+  server: v10.toppp.cc
+  port: 42110
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V台TW11[ipv6]
+  type: vmess
+  server: v11.toppp.cc
+  port: 42111
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V美US13[ipv6]
+  type: vmess
+  server: v12.toppp.cc
+  port: 42113
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V日JP14[墙升高了优先高倍率]
+  type: vmess
+  server: v10.toppp.cc
+  port: 42114
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V日JP15
+  type: vmess
+  server: v10.toppp.cc
+  port: 42115
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V美US16
+  type: vmess
+  server: v16.toppp.cc
+  port: 42116
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V美US17|2x
+  type: vmess
+  server: v17.toppp.cc
+  port: 42117
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: V美US18|2x[不要频繁点测试]
+  type: vmess
+  server: v18.toppp.cc
+  port: 42118
+  uuid: 16aeb898-569f-4558-b42a-ad84626e86f6
+  alterId: 0
+  cipher: auto
+  udp: true
+proxy-groups:
+- name: 拓扑门topman8848.com
+  type: select
+  proxies:
+  - 自动选择
+  - 故障转移
+  - 距离下次重置剩余：16 天
+  - S港HK3|2x[节点多测试不准直接使用]
+  - S港[S节点不能用的必须换软件]
+  - S港HK13|2x[墙升高了优先高倍率]
+  - S港HK21|2x
+  - S港HK22|2x
+  - S港HK23|2x
+  - S港HK24|2x
+  - JP2实时更新订阅
+  - SG8[20260620]
+  - "[0倍率]近期会大更新"
+  - S台TW9|2x
+  - S9HK10|20x[成本巨幅增加]
+  - S美US11|2x
+  - S美US15|5x
+  - L2港HK26|2x
+  - L2美US24|2x
+  - L6美US33|5x
+  - L2台TW25|2x
+  - L2台TW31|3x
+  - L2日JP28|2x
+  - L4日JP32|5x
+  - L2新SG27|2x
+  - L4新SG30|4x
+  - 0620地址公告fa邮件topman8848@gmail.com
+  - A1[0倍率]
+  - AUS2|0.1x
+  - AUS3[建议不要自动选择节点]
+  - 202600619节点-A1US-
+  - A1US5-保持每天更新
+  - 日JP6
+  - 日JP7
+  - 日JP8
+  - 美US21
+  - 台TW10[gpt]
+  - 港HK11
+  - 新SG18
+  - 德DE15【未标注都是1倍节点】
+  - 韩KR20
+  - L6美US34|5x
+  - L6美US35|5x
+  - L6美US36|5x
+  - L6韩KR40|5x
+  - L2港HK41|8x
+  - L6俄RU42|5x
+  - L6印尼ID43|5x
+  - L6泰TH44|5x
+  - L6印IN45|5x
+  - L6澳AU46|5x
+  - L6加CA47|5x
+  - L6英GB48|5x
+  - L6法FR49|5x
+  - L6德DE50|5x
+  - L9港HK51|20x[成本巨幅增加]
+  - V小火箭要升级版本
+  - V最新地址【aa.booc.cc】
+  - V地址公告fa邮件topman8848@gmail.com
+  - V【全功能地址a2.doooo.top】
+  - V韩KR6【新软件有L2节点】
+  - V港HK7【永久地址topmang.com-需要代理】
+  - V新SG9【地址toopman.com】
+  - V台TW10【订阅地址也会变】
+  - V台TW11[ipv6]
+  - V美US13[ipv6]
+  - V日JP14[墙升高了优先高倍率]
+  - V日JP15
+  - V美US16
+  - V美US17|2x
+  - V美US18|2x[不要频繁点测试]
+- name: 自动选择
+  type: url-test
+  proxies:
+  - 距离下次重置剩余：16 天
+  - S港HK3|2x[节点多测试不准直接使用]
+  - S港[S节点不能用的必须换软件]
+  - S港HK13|2x[墙升高了优先高倍率]
+  - S港HK21|2x
+  - S港HK22|2x
+  - S港HK23|2x
+  - S港HK24|2x
+  - JP2实时更新订阅
+  - SG8[20260620]
+  - "[0倍率]近期会大更新"
+  - S台TW9|2x
+  - S9HK10|20x[成本巨幅增加]
+  - S美US11|2x
+  - S美US15|5x
+  - L2港HK26|2x
+  - L2美US24|2x
+  - L6美US33|5x
+  - L2台TW25|2x
+  - L2台TW31|3x
+  - L2日JP28|2x
+  - L4日JP32|5x
+  - L2新SG27|2x
+  - L4新SG30|4x
+  - 0620地址公告fa邮件topman8848@gmail.com
+  - A1[0倍率]
+  - AUS2|0.1x
+  - AUS3[建议不要自动选择节点]
+  - 202600619节点-A1US-
+  - A1US5-保持每天更新
+  - 日JP6
+  - 日JP7
+  - 日JP8
+  - 美US21
+  - 台TW10[gpt]
+  - 港HK11
+  - 新SG18
+  - 德DE15【未标注都是1倍节点】
+  - 韩KR20
+  - L6美US34|5x
+  - L6美US35|5x
+  - L6美US36|5x
+  - L6韩KR40|5x
+  - L2港HK41|8x
+  - L6俄RU42|5x
+  - L6印尼ID43|5x
+  - L6泰TH44|5x
+  - L6印IN45|5x
+  - L6澳AU46|5x
+  - L6加CA47|5x
+  - L6英GB48|5x
+  - L6法FR49|5x
+  - L6德DE50|5x
+  - L9港HK51|20x[成本巨幅增加]
+  - V小火箭要升级版本
+  - V最新地址【aa.booc.cc】
+  - V地址公告fa邮件topman8848@gmail.com
+  - V【全功能地址a2.doooo.top】
+  - V韩KR6【新软件有L2节点】
+  - V港HK7【永久地址topmang.com-需要代理】
+  - V新SG9【地址toopman.com】
+  - V台TW10【订阅地址也会变】
+  - V台TW11[ipv6]
+  - V美US13[ipv6]
+  - V日JP14[墙升高了优先高倍率]
+  - V日JP15
+  - V美US16
+  - V美US17|2x
+  - V美US18|2x[不要频繁点测试]
+  url: http://www.gstatic.com/generate_204
+  interval: 86400
+- name: 故障转移
+  type: fallback
+  proxies:
+  - 距离下次重置剩余：16 天
+  - S港HK3|2x[节点多测试不准直接使用]
+  - S港[S节点不能用的必须换软件]
+  - S港HK13|2x[墙升高了优先高倍率]
+  - S港HK21|2x
+  - S港HK22|2x
+  - S港HK23|2x
+  - S港HK24|2x
+  - JP2实时更新订阅
+  - SG8[20260620]
+  - "[0倍率]近期会大更新"
+  - S台TW9|2x
+  - S9HK10|20x[成本巨幅增加]
+  - S美US11|2x
+  - S美US15|5x
+  - L2港HK26|2x
+  - L2美US24|2x
+  - L6美US33|5x
+  - L2台TW25|2x
+  - L2台TW31|3x
+  - L2日JP28|2x
+  - L4日JP32|5x
+  - L2新SG27|2x
+  - L4新SG30|4x
+  - 0620地址公告fa邮件topman8848@gmail.com
+  - A1[0倍率]
+  - AUS2|0.1x
+  - AUS3[建议不要自动选择节点]
+  - 202600619节点-A1US-
+  - A1US5-保持每天更新
+  - 日JP6
+  - 日JP7
+  - 日JP8
+  - 美US21
+  - 台TW10[gpt]
+  - 港HK11
+  - 新SG18
+  - 德DE15【未标注都是1倍节点】
+  - 韩KR20
+  - L6美US34|5x
+  - L6美US35|5x
+  - L6美US36|5x
+  - L6韩KR40|5x
+  - L2港HK41|8x
+  - L6俄RU42|5x
+  - L6印尼ID43|5x
+  - L6泰TH44|5x
+  - L6印IN45|5x
+  - L6澳AU46|5x
+  - L6加CA47|5x
+  - L6英GB48|5x
+  - L6法FR49|5x
+  - L6德DE50|5x
+  - L9港HK51|20x[成本巨幅增加]
+  - V小火箭要升级版本
+  - V最新地址【aa.booc.cc】
+  - V地址公告fa邮件topman8848@gmail.com
+  - V【全功能地址a2.doooo.top】
+  - V韩KR6【新软件有L2节点】
+  - V港HK7【永久地址topmang.com-需要代理】
+  - V新SG9【地址toopman.com】
+  - V台TW10【订阅地址也会变】
+  - V台TW11[ipv6]
+  - V美US13[ipv6]
+  - V日JP14[墙升高了优先高倍率]
+  - V日JP15
+  - V美US16
+  - V美US17|2x
+  - V美US18|2x[不要频繁点测试]
+  url: http://www.gstatic.com/generate_204
+  interval: 7200
+rules:
+- IP-CIDR,1.1.1.1/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,8.8.8.8/32,拓扑门topman8848.com,no-resolve
+- DOMAIN-SUFFIX,services.googleapis.cn,拓扑门topman8848.com
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,拓扑门topman8848.com
+- DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+- DOMAIN,safebrowsing.googleapis.com,DIRECT
+- DOMAIN,developer.apple.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,digicert.com,拓扑门topman8848.com
+- DOMAIN,ocsp.apple.com,拓扑门topman8848.com
+- DOMAIN,ocsp.comodoca.com,拓扑门topman8848.com
+- DOMAIN,ocsp.usertrust.com,拓扑门topman8848.com
+- DOMAIN,ocsp.sectigo.com,拓扑门topman8848.com
+- DOMAIN,ocsp.verisign.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,apple-dns.net,拓扑门topman8848.com
+- DOMAIN,testflight.apple.com,拓扑门topman8848.com
+- DOMAIN,sandbox.itunes.apple.com,拓扑门topman8848.com
+- DOMAIN,itunes.apple.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,apps.apple.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,blobstore.apple.com,拓扑门topman8848.com
+- DOMAIN,cvws.icloud-content.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,me.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,cdn20.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+- DOMAIN-SUFFIX,edgekey.net,DIRECT
+- DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT
+- DOMAIN-SUFFIX,mwcname.com,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+- DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+- DOMAIN,cn.bing.com,DIRECT
+- DOMAIN-SUFFIX,126.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+- DOMAIN-SUFFIX,36kr.com,DIRECT
+- DOMAIN-SUFFIX,acfun.tv,DIRECT
+- DOMAIN-SUFFIX,air-matters.com,DIRECT
+- DOMAIN-SUFFIX,aixifan.com,DIRECT
+- DOMAIN-KEYWORD,alicdn,DIRECT
+- DOMAIN-KEYWORD,alipay,DIRECT
+- DOMAIN-KEYWORD,taobao,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-KEYWORD,baidu,DIRECT
+- DOMAIN-SUFFIX,bdimg.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,bilivideo.com,DIRECT
+- DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+- DOMAIN-SUFFIX,clouddn.com,DIRECT
+- DOMAIN-SUFFIX,cnbeta.com,DIRECT
+- DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+- DOMAIN-SUFFIX,cootekservice.com,DIRECT
+- DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,dgtle.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,duokan.com,DIRECT
+- DOMAIN-SUFFIX,easou.com,DIRECT
+- DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,feng.com,DIRECT
+- DOMAIN-SUFFIX,fir.im,DIRECT
+- DOMAIN-SUFFIX,frdic.com,DIRECT
+- DOMAIN-SUFFIX,g-cores.com,DIRECT
+- DOMAIN-SUFFIX,godic.net,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN,cdn.hockeyapp.net,DIRECT
+- DOMAIN-SUFFIX,hongxiu.com,DIRECT
+- DOMAIN-SUFFIX,hxcdn.net,DIRECT
+- DOMAIN-SUFFIX,iciba.com,DIRECT
+- DOMAIN-SUFFIX,ifeng.com,DIRECT
+- DOMAIN-SUFFIX,ifengimg.com,DIRECT
+- DOMAIN-SUFFIX,ipip.net,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,jianshu.com,DIRECT
+- DOMAIN-SUFFIX,knewone.com,DIRECT
+- DOMAIN-SUFFIX,le.com,DIRECT
+- DOMAIN-SUFFIX,lecloud.com,DIRECT
+- DOMAIN-SUFFIX,lemicp.com,DIRECT
+- DOMAIN-SUFFIX,licdn.com,DIRECT
+- DOMAIN-SUFFIX,luoo.net,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,mi.com,DIRECT
+- DOMAIN-SUFFIX,miaopai.com,DIRECT
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,miwifi.com,DIRECT
+- DOMAIN-SUFFIX,mob.com,DIRECT
+- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-KEYWORD,officecdn,DIRECT
+- DOMAIN-SUFFIX,oschina.net,DIRECT
+- DOMAIN-SUFFIX,ppsimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,qdaily.com,DIRECT
+- DOMAIN-SUFFIX,qdmm.com,DIRECT
+- DOMAIN-SUFFIX,qhimg.com,DIRECT
+- DOMAIN-SUFFIX,qhres.com,DIRECT
+- DOMAIN-SUFFIX,qidian.com,DIRECT
+- DOMAIN-SUFFIX,qihucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiniu.com,DIRECT
+- DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiyipic.com,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,qqurl.com,DIRECT
+- DOMAIN-SUFFIX,rarbg.to,DIRECT
+- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-SUFFIX,segmentfault.com,DIRECT
+- DOMAIN-SUFFIX,sinaapp.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,soku.com,DIRECT
+- DOMAIN-SUFFIX,speedtest.net,DIRECT
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,suning.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tencent.com,DIRECT
+- DOMAIN-SUFFIX,tenpay.com,DIRECT
+- DOMAIN-SUFFIX,tianyancha.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,tudou.com,DIRECT
+- DOMAIN-SUFFIX,umetrip.com,DIRECT
+- DOMAIN-SUFFIX,upaiyun.com,DIRECT
+- DOMAIN-SUFFIX,upyun.com,DIRECT
+- DOMAIN-SUFFIX,veryzhun.com,DIRECT
+- DOMAIN-SUFFIX,weather.com,DIRECT
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,xiami.com,DIRECT
+- DOMAIN-SUFFIX,xiami.net,DIRECT
+- DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,xunlei.com,DIRECT
+- DOMAIN-SUFFIX,yhd.com,DIRECT
+- DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+- DOMAIN-SUFFIX,yinxiang.com,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,youdao.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,zealer.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+- DOMAIN-SUFFIX,zoho.com,DIRECT
+- DOMAIN-KEYWORD,amazon,拓扑门topman8848.com
+- DOMAIN-KEYWORD,google,拓扑门topman8848.com
+- DOMAIN-KEYWORD,gmail,拓扑门topman8848.com
+- DOMAIN-KEYWORD,youtube,拓扑门topman8848.com
+- DOMAIN-KEYWORD,facebook,拓扑门topman8848.com
+- DOMAIN-SUFFIX,fb.me,拓扑门topman8848.com
+- DOMAIN-SUFFIX,fbcdn.net,拓扑门topman8848.com
+- DOMAIN-KEYWORD,twitter,拓扑门topman8848.com
+- DOMAIN-KEYWORD,instagram,拓扑门topman8848.com
+- DOMAIN-KEYWORD,dropbox,拓扑门topman8848.com
+- DOMAIN-SUFFIX,twimg.com,拓扑门topman8848.com
+- DOMAIN-KEYWORD,blogspot,拓扑门topman8848.com
+- DOMAIN-SUFFIX,youtu.be,拓扑门topman8848.com
+- DOMAIN-KEYWORD,whatsapp,拓扑门topman8848.com
+- DOMAIN-KEYWORD,admarvel,REJECT
+- DOMAIN-KEYWORD,admaster,REJECT
+- DOMAIN-KEYWORD,adsage,REJECT
+- DOMAIN-KEYWORD,adsmogo,REJECT
+- DOMAIN-KEYWORD,adsrvmedia,REJECT
+- DOMAIN-KEYWORD,adwords,REJECT
+- DOMAIN-KEYWORD,adservice,REJECT
+- DOMAIN-SUFFIX,appsflyer.com,REJECT
+- DOMAIN-KEYWORD,domob,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-KEYWORD,duomeng,REJECT
+- DOMAIN-KEYWORD,dwtrack,REJECT
+- DOMAIN-KEYWORD,guanggao,REJECT
+- DOMAIN-KEYWORD,lianmeng,REJECT
+- DOMAIN-SUFFIX,mmstat.com,REJECT
+- DOMAIN-KEYWORD,mopub,REJECT
+- DOMAIN-KEYWORD,omgmta,REJECT
+- DOMAIN-KEYWORD,openx,REJECT
+- DOMAIN-KEYWORD,partnerad,REJECT
+- DOMAIN-KEYWORD,pingfore,REJECT
+- DOMAIN-KEYWORD,supersonicads,REJECT
+- DOMAIN-KEYWORD,uedas,REJECT
+- DOMAIN-KEYWORD,umeng,REJECT
+- DOMAIN-KEYWORD,usage,REJECT
+- DOMAIN-SUFFIX,vungle.com,REJECT
+- DOMAIN-KEYWORD,wlmonitor,REJECT
+- DOMAIN-KEYWORD,zjtoolbar,REJECT
+- DOMAIN-SUFFIX,9to5mac.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,abpchina.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,adblockplus.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,adobe.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,akamaized.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,alfredapp.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,amplitude.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ampproject.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,android.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,angularjs.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,aolcdn.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,apkpure.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,appledaily.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,appshopper.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,appspot.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,arcgis.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,archive.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,armorgames.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,aspnetcdn.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,att.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,awsstatic.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,azureedge.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,azurewebsites.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,bing.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,bintray.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,bit.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,bit.ly,拓扑门topman8848.com
+- DOMAIN-SUFFIX,bitbucket.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,bjango.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,bkrtx.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,blog.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,blogcdn.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,blogger.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,blogsmithmedia.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,blogspot.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,blogspot.hk,拓扑门topman8848.com
+- DOMAIN-SUFFIX,bloomberg.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,box.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,box.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,cachefly.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,chromium.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,cl.ly,拓扑门topman8848.com
+- DOMAIN-SUFFIX,cloudflare.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,cloudfront.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,cloudmagic.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,cmail19.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,cnet.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,cocoapods.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,comodoca.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,crashlytics.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,culturedcode.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,d.pr,拓扑门topman8848.com
+- DOMAIN-SUFFIX,danilo.to,拓扑门topman8848.com
+- DOMAIN-SUFFIX,dayone.me,拓扑门topman8848.com
+- DOMAIN-SUFFIX,db.tt,拓扑门topman8848.com
+- DOMAIN-SUFFIX,deskconnect.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,disq.us,拓扑门topman8848.com
+- DOMAIN-SUFFIX,disqus.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,disquscdn.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,dnsimple.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,docker.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,dribbble.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,droplr.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,duckduckgo.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,dueapp.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,dytt8.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,edgecastcdn.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,edgekey.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,edgesuite.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,engadget.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,entrust.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,eurekavpt.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,evernote.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,fabric.io,拓扑门topman8848.com
+- DOMAIN-SUFFIX,fast.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,fastly.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,fc2.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,feedburner.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,feedly.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,feedsportal.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,fiftythree.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,firebaseio.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,flexibits.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,flickr.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,flipboard.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,g.co,拓扑门topman8848.com
+- DOMAIN-SUFFIX,gabia.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,geni.us,拓扑门topman8848.com
+- DOMAIN-SUFFIX,gfx.ms,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ggpht.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ghostnoteapp.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,git.io,拓扑门topman8848.com
+- DOMAIN-KEYWORD,github,拓扑门topman8848.com
+- DOMAIN-SUFFIX,globalsign.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,gmodules.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,godaddy.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,golang.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,gongm.in,拓扑门topman8848.com
+- DOMAIN-SUFFIX,goo.gl,拓扑门topman8848.com
+- DOMAIN-SUFFIX,goodreaders.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,goodreads.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,gravatar.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,gstatic.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,gvt0.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,hockeyapp.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,hotmail.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,icons8.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ifixit.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ift.tt,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ifttt.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,iherb.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,imageshack.us,拓扑门topman8848.com
+- DOMAIN-SUFFIX,img.ly,拓扑门topman8848.com
+- DOMAIN-SUFFIX,imgur.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,imore.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,instapaper.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ipn.li,拓扑门topman8848.com
+- DOMAIN-SUFFIX,is.gd,拓扑门topman8848.com
+- DOMAIN-SUFFIX,issuu.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,itgonglun.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,itun.es,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ixquick.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,j.mp,拓扑门topman8848.com
+- DOMAIN-SUFFIX,js.revsci.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,jshint.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,jtvnw.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,justgetflux.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,kat.cr,拓扑门topman8848.com
+- DOMAIN-SUFFIX,klip.me,拓扑门topman8848.com
+- DOMAIN-SUFFIX,libsyn.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,linkedin.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,line-apps.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,linode.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,lithium.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,littlehj.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,live.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,live.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,livefilestore.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,llnwd.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,macid.co,拓扑门topman8848.com
+- DOMAIN-SUFFIX,macromedia.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,macrumors.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,mashable.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,mathjax.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,medium.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,mega.co.nz,拓扑门topman8848.com
+- DOMAIN-SUFFIX,mega.nz,拓扑门topman8848.com
+- DOMAIN-SUFFIX,megaupload.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,microsofttranslator.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,mindnode.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,mobile01.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,modmyi.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,msedge.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,myfontastic.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,name.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,nextmedia.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,nsstatic.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,nssurge.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,nyt.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,nytimes.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,omnigroup.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,onedrive.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,onenote.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ooyala.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,openvpn.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,openwrt.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,orkut.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,osxdaily.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,outlook.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ow.ly,拓扑门topman8848.com
+- DOMAIN-SUFFIX,paddleapi.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,parallels.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,parse.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,pdfexpert.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,periscope.tv,拓扑门topman8848.com
+- DOMAIN-SUFFIX,pinboard.in,拓扑门topman8848.com
+- DOMAIN-SUFFIX,pinterest.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,pixelmator.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,pixiv.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,playpcesor.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,playstation.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,playstation.com.hk,拓扑门topman8848.com
+- DOMAIN-SUFFIX,playstation.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,playstationnetwork.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,pushwoosh.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,rime.im,拓扑门topman8848.com
+- DOMAIN-SUFFIX,servebom.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,sfx.ms,拓扑门topman8848.com
+- DOMAIN-SUFFIX,shadowsocks.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,sharethis.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,shazam.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,skype.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,smartdns拓扑门topman8848.com.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,smartmailcloud.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,sndcdn.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,sony.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,soundcloud.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,sourceforge.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,spotify.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,squarespace.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,sstatic.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,st.luluku.pw,拓扑门topman8848.com
+- DOMAIN-SUFFIX,stackoverflow.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,startpage.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,staticflickr.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,steamcommunity.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,symauth.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,symcb.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,symcd.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,tapbots.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,tapbots.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,tdesktop.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,techcrunch.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,techsmith.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,thepiratebay.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,theverge.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,time.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,timeinc.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,tiny.cc,拓扑门topman8848.com
+- DOMAIN-SUFFIX,tinypic.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,tmblr.co,拓扑门topman8848.com
+- DOMAIN-SUFFIX,todoist.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,trello.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,trustasiassl.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,tumblr.co,拓扑门topman8848.com
+- DOMAIN-SUFFIX,tumblr.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,tweetdeck.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,tweetmarker.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,twitch.tv,拓扑门topman8848.com
+- DOMAIN-SUFFIX,txmblr.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,typekit.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ubertags.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ublock.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ubnt.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ulyssesapp.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,urchin.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,usertrust.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,v.gd,拓扑门topman8848.com
+- DOMAIN-SUFFIX,v2ex.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,vimeo.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,vimeocdn.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,vine.co,拓扑门topman8848.com
+- DOMAIN-SUFFIX,vivaldi.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,vox-cdn.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,vsco.co,拓扑门topman8848.com
+- DOMAIN-SUFFIX,vultr.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,w.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,w3schools.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,webtype.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,wikiwand.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,wikileaks.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,wikimedia.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,wikipedia.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,wikipedia.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,windows.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,windows.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,wire.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,wordpress.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,workflowy.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,wp.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,wsj.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,wsj.net,拓扑门topman8848.com
+- DOMAIN-SUFFIX,xda-developers.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,xeeno.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,xiti.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,yahoo.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,yimg.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ying.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,yoyo.org,拓扑门topman8848.com
+- DOMAIN-SUFFIX,ytimg.com,拓扑门topman8848.com
+- DOMAIN-SUFFIX,telegra.ph,拓扑门topman8848.com
+- DOMAIN-SUFFIX,telegram.org,拓扑门topman8848.com
+- IP-CIDR,91.108.4.0/22,拓扑门topman8848.com,no-resolve
+- IP-CIDR,91.108.8.0/21,拓扑门topman8848.com,no-resolve
+- IP-CIDR,91.108.16.0/22,拓扑门topman8848.com,no-resolve
+- IP-CIDR,91.108.56.0/22,拓扑门topman8848.com,no-resolve
+- IP-CIDR,149.154.160.0/20,拓扑门topman8848.com,no-resolve
+- IP-CIDR6,2001:67c:4e8::/48,拓扑门topman8848.com,no-resolve
+- IP-CIDR6,2001:b28:f23d::/48,拓扑门topman8848.com,no-resolve
+- IP-CIDR6,2001:b28:f23f::/48,拓扑门topman8848.com,no-resolve
+- IP-CIDR,120.232.181.162/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,120.241.147.226/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,120.253.253.226/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,120.253.255.162/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,120.253.255.34/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,120.253.255.98/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,180.163.150.162/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,180.163.150.34/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,180.163.151.162/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,180.163.151.34/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,203.208.39.0/24,拓扑门topman8848.com,no-resolve
+- IP-CIDR,203.208.40.0/24,拓扑门topman8848.com,no-resolve
+- IP-CIDR,203.208.41.0/24,拓扑门topman8848.com,no-resolve
+- IP-CIDR,203.208.43.0/24,拓扑门topman8848.com,no-resolve
+- IP-CIDR,203.208.50.0/24,拓扑门topman8848.com,no-resolve
+- IP-CIDR,220.181.174.162/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,220.181.174.226/32,拓扑门topman8848.com,no-resolve
+- IP-CIDR,220.181.174.34/32,拓扑门topman8848.com,no-resolve
+- DOMAIN,injections.adguard.org,DIRECT
+- DOMAIN,local.adguard.org,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- IP-CIDR,224.0.0.0/4,DIRECT
+- IP-CIDR6,fe80::/10,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,-cn,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,拓扑门topman8848.com
