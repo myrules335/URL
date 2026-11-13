@@ -1,0 +1,13 @@
+DOMAIN,p.inari.site
+DOMAIN,x1080x.com
+DOMAIN,www.filemail.com
+DOMAIN,www.rosihui.top
+
+DOMAIN-SUFFIX,gofile.io
+
+PROCESS-NAME-REGEX,missav.*
+PROCESS-NAME-REGEX,mopaiba*.*
+PROCESS-NAME-REGEX,ryhk*.*
+PROCESS-NAME-REGEX,ruyanhk*.*
+PROCESS-NAME-REGEX,ruyyh*.*
+PROCESS-NAME-REGEX,kemono*.*
