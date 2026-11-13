@@ -1,0 +1,25 @@
+#muse
+DOMAIN-SUFFIX,muse.ai
+
+#recraft
+DOMAIN-SUFFIX,recraft.ai
+
+#poe
+DOMAIN-SUFFIX,poe.com
+
+#aitools
+PROCESS-NAME,LM Studio
+DOMAIN-SUFFIX,lmsudio.ai
+
+#perplexity.ai
+DOMAIN-SUFFIX,perplexity.ai
+
+#VS CODE AI chat
+PROCESS-NAME,Code Helper
+PROCESS-NAME,Code Helper (Plugin)
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,api.githubcopilot.com
+DOMAIN-SUFFIX,api.github.com
+DOMAIN-SUFFIX,github.gallery.vsassets.io
+DOMAIN-SUFFIX,github.gallerycdn.vsassets.io
+DOMAIN-SUFFIX,applicationinsights.azure.com
